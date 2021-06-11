@@ -11,6 +11,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^5.2.6",
+    "csv-loader": "^3.0.3",
+    "eslint": "^7.28.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "style-loader": "^2.0.0",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.2"
   },
