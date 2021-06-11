@@ -2,8 +2,9 @@ import _ from 'lodash'
 import './style.css'
 import Icon from './icon.svg'
 import Notes from './data.csv'
+import printMe from './print.js'
 
-function component () {
+function helloComponent () {
     const element = document.createElement('div')
 
     element.innerHTML = _.join(['Hello', 'webpack'], ' ')
@@ -13,6 +14,17 @@ function component () {
     myIcon.src = Icon
 
     element.appendChild(myIcon)
+    return element
+}
+
+function dataComponent () {
+    const element = document.createElement('div')
+
+    const btn = document.createElement('button')
+    btn.innerHTML = 'Click me and check the console!'
+    btn.onclick = printMe
+
+    element.appendChild(btn)
 
     for (const n in Notes) {
         const row = document.createElement('div')
@@ -23,4 +35,5 @@ function component () {
     return element
 }
 
-document.body.appendChild(component())
+document.body.appendChild(helloComponent())
+document.body.appendChild(dataComponent())
