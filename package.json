@@ -1,27 +1,35 @@
 {
-  "name": "WebpackUp",
+  "name": "webpackup",
   "version": "1.0.0",
-  "description": "",
-  "private": true,
+  "description": "Webpack learning and playground.",
+  "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graycarl/webpackup.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/graycarl/webpackup/issues"
+  },
+  "homepage": "https://github.com/graycarl/webpackup#readme",
   "devDependencies": {
     "css-loader": "^5.2.6",
     "csv-loader": "^3.0.3",
-    "eslint": "^7.28.0",
+    "eslint": "^7.29.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "html-webpack-plugin": "^5.3.1",
+    "html-webpack-plugin": "^5.3.2",
     "style-loader": "^2.0.0",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.2"
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "lodash": "^4.17.21"
