@@ -4,8 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     mode: 'development',
     entry: {
-        index: './src/index.js',
-        print: './src/print.js'
+        app: './src/index.js'
     },
     devtool: 'inline-source-map',
     devServer: {
@@ -13,7 +12,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Development'
+            title: 'ReactUp'
         })
     ],
     output: {
@@ -26,14 +25,6 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader']
-            },
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource'
-            },
-            {
-                test: /\.csv$/i,
-                use: ['csv-loader']
             }
         ]
     }
