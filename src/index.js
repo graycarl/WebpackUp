@@ -1,14 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import PropTypes from 'prop-types'
 import './style.css'
 
-function reactRoot () {
-    const element = document.createElement('div')
-    element.id = 'react-root'
-    return element
-}
-
 class ShoppingList extends React.Component {
+    static get propTypes () {
+        return {
+            name: PropTypes.string
+        }
+    }
+
     render () {
         return (
             <div className="shopping-list">
@@ -23,7 +24,6 @@ class ShoppingList extends React.Component {
     }
 }
 
-document.body.appendChild(reactRoot())
 ReactDOM.render(
     <ShoppingList name="Taylor" />,
     document.getElementById('react-root')

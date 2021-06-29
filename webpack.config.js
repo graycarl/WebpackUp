@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     mode: 'development',
     entry: {
-        app: './src/index.jsx'
+        app: './src/index.js'
     },
     devtool: 'inline-source-map',
     devServer: {
@@ -12,7 +12,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'ReactUp'
+            title: 'ReactUp',
+            template: './public/index.html'
         })
     ],
     output: {
