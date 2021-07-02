@@ -5,6 +5,9 @@ import './style.css'
 
 ReactDOM.render(
     // see: https://javascript.info/import-export#import
-    <pg.Clock />,
+    <div>
+        <pg.Clock />
+        <pg.Toggle />
+    </div>,
     document.getElementById('react-root')
 )
