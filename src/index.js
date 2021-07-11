@@ -2,8 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import 'normalize.css'
 import 'milligram'
-import * as pg from './playground.js'
 import './style.css'
+import Clock from './playground/clock.js'
+import Toggle from './playground/toggle.js'
+import LoginControl from './playground/login.js'
 
 ReactDOM.render(
     <div className='wrapper'>
@@ -13,9 +15,9 @@ ReactDOM.render(
             </section>
         </nav>
         <div className='container'>
-            <pg.Clock />
-            <pg.Toggle />
-            <pg.LoginControl />
+            <Clock />
+            <Toggle />
+            <LoginControl />
         </div>
     </div>,
     document.getElementById('react-root')
