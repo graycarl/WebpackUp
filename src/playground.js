@@ -52,26 +52,25 @@ class Toggle extends React.Component {
     }
 }
 
-
 class LoginControl extends React.Component {
     constructor (props) {
         super(props)
         this.handleLoginClick = this.handleLoginClick.bind(this)
         this.handleLogoutClick = this.handleLogoutClick.bind(this)
-        this.state = {isLoggedIn: false}
+        this.state = { isLoggedIn: false }
     }
 
     handleLoginClick () {
-        this.setState({isLoggedIn: true})
+        this.setState({ isLoggedIn: true })
     }
 
     handleLogoutClick () {
-        this.setState({isLoggedIn: false})
+        this.setState({ isLoggedIn: false })
     }
 
     render () {
-        const isLoggedIn = this.state.isLoggedIn;
-        let button;
+        const isLoggedIn = this.state.isLoggedIn
+        let button
         if (isLoggedIn) {
             button = <LogoutButton onClick={this.handleLogoutClick} />
         } else {

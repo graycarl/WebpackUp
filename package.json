@@ -36,6 +36,8 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "milligram": "^1.4.1",
+    "normalize.css": "^8.0.1"
   }
 }
