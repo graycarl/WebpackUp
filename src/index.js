@@ -8,6 +8,7 @@ ReactDOM.render(
     <div>
         <pg.Clock />
         <pg.Toggle />
+        <pg.LoginControl />
     </div>,
     document.getElementById('react-root')
 )
