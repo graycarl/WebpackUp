@@ -6,6 +6,7 @@ import './style.css'
 import Clock from './playground/clock.js'
 import Toggle from './playground/toggle.js'
 import LoginControl from './playground/login.js'
+import Calculator from './playground/boiling.js'
 
 ReactDOM.render(
     <div className='wrapper'>
@@ -18,6 +19,7 @@ ReactDOM.render(
             <Clock />
             <Toggle />
             <LoginControl />
+            <Calculator />
         </div>
     </div>,
     document.getElementById('react-root')
