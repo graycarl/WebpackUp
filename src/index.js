@@ -1,26 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import 'normalize.css'
 import 'milligram'
 import './style.css'
-import Clock from './playground/clock.js'
-import Toggle from './playground/toggle.js'
-import LoginControl from './playground/login.js'
-import Calculator from './playground/boiling.js'
+import PlayGround from './playground/page.js'
+import Home from './pages/home/home.js'
 
 ReactDOM.render(
-    <div className='wrapper'>
-        <nav className='navigation'>
-            <section className='container'>
-                <span className='navigation-title'>This is title</span>
-            </section>
-        </nav>
-        <div className='container'>
-            <Clock />
-            <Toggle />
-            <LoginControl />
-            <Calculator />
+    <Router>
+        <div>
+            <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/playground">PlayGround</Link></li>
+            </ul>
         </div>
-    </div>,
-    document.getElementById('react-root')
+        <Switch>
+            <Route path="/playground"><PlayGround /></Route>
+            <Route path="/"><Home/></Route>
+        </Switch>
+    </Router>,
+    document.body
 )

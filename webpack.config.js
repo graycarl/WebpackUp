@@ -12,8 +12,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'ReactUp',
-            template: './public/index.html'
+            title: 'ReactUp'
         })
     ],
     output: {
